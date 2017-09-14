@@ -1,0 +1,56 @@
+#main{width: 1111px; margin: 0 auto;}
+body{ overflow-x: hidden; }
+a{ font-size: 14px; color: #333; }
+
+.header{ height: 73px; width: 100%;}
+.header .header-logo{ float: left; }
+.header .header-logo .logo{ line-height: 73px; color: #00c3f5; }
+
+.header .header-login{ float: right; line-height: 73px;}
+
+.header .header-login .left{ float: left; height: 73px; width: 58px; text-align: center;}
+.header .header-login .right{ float: right; height: 73px; width: 58px; text-align: center;}
+.header .header-login .right a{ color: #666666; position: relative;}
+.header .header-login .right a i{ position: absolute; }
+.header .header-login .right .shop-text{ position: absolute; color: red; top: -5px; left: 5px; font-size: 12px;}
+.header .header-login .login{ color: #bababa;background: #eeeeee; width: 22px;height: 22px; display: inline-block; line-height: 22px; text-align: center; border-radius: 20px;cursor: pointer;}
+
+.header .header-public{ width: 100%; height: 0; position: absolute; top: 73px; background: #fff; opacity: 0; transition: all .3s ease-in-out; z-index: 3;}
+
+.header .header-list{ float: right;margin-top: 30px; font-size: 14px;}
+.header .header-list li{ float: left; margin: 0 15px; height: 50px;}
+.header .header-list li div a{ color: #333333; transition: color ease-out 0.2s;}
+.header .header-list li div a:hover{ color: #00c3f5; }
+.header .header-list .mzsj-list{ position: absolute; top: 80px; left: 400px; height: 150px; text-align: center; line-height: 20px; z-index: 999; display: none;}
+.header .header-list .mzsj-list li{position: relative; margin: 0 30px; opacity: 0; }
+.header .header-list .mzsj-list a{ color: #333333; display: inline-block;}
+.header .header-list .mzsj-list img{ width: 80px; height: 80px; }
+
+.header .header-list .mlsj-list{ position: absolute; top: 80px; left: 400px; height: 150px; text-align: center; line-height: 20px; z-index: 999; display: none;}
+.header .header-list .mlsj-list li{position: relative; margin: 0 30px; opacity: 0; }
+.header .header-list .mlsj-list a{ color: #333333; display: inline-block;}
+.header .header-list .mlsj-list img{ width: 80px; height: 80px; }
+
+.banner .banner-container{ position: relative; left: -960px; width: 100%;}
+.banner .banner-container li{ position: absolute; left: 50%;}
+.banner .banner-left{ height: 60px; width: 30px; background: transparent; line-height: 60px; position: absolute; z-index: 2; left: 296px; top: 45%; transition: all .5s; cursor: pointer; text-align: center; color: #fff;}
+.banner .banner-right{ height: 60px; width: 30px; background: transparent; line-height: 60px; position: absolute; z-index: 2; right: 10px; top: 45%; transition: all .5s; cursor: pointer; text-align: center; color: #fff;}
+
+
+
+
+.banner .banner-nav{ position: absolute; background: rgba(248,247,247,0.6); left: 76px; width: 220px; height: 480px; z-index: 2;}
+.banner .banner-nav li{ height: 57px; line-height: 44px; transition: all .5s;}
+.banner .banner-nav .banner-nav-list a{ color: #333; font-size: 14px; display: block; height: 100%; padding: 10px 30px 0;}
+.banner .banner-nav li:hover a{ background: #fff; }
+
+.banner .banner-nav .banner-sj-list{ height: 480px; background: #fff; position: absolute; left: 220px;top: 0; white-space: nowrap; box-shadow: 1px 1px 2px rgba(0,0,0,0.1); display: none;}
+.banner .banner-nav .banner-sj-list .banner-sj-list-hd{ margin: 15px 28px 15px 25px;width: 320px; height: 450px;display: inline-block; }
+.banner .banner-nav .banner-sj-list .banner-sj-list-hd a{ border-bottom: 1px solid #F5F5F5; display: block; height: 40px; line-height: 40px; margin-bottom: 16px; transition: all .5s; float: left;}
+.banner .banner-nav .banner-sj-list .banner-sj-list-hd .banner-sj-list-child{ width: 150px; }
+.banner .banner-nav .banner-sj-list .banner-sj-list-hd a p,i{ display: inline-block; }
+.banner .banner-nav .banner-sj-list .banner-sj-list-hd a p{ margin-right: 240px; }
+.banner .banner-nav .banner-sj-list .banner-sj-list-hd a:hover{ color: #00c3f5; }
+.banner .banner-nav .banner-sj-list .banner-sj-list-hd img{ width: 40px; height: 40px; }
+.banner .banner-nav .banner-sj-list .banner-sj-list-ad{ display: inline-block; width: 220px; height: 480px; background: #F5F5F5; vertical-align: top; overflow: hidden; padding: 0 14px;}
+.banner .banner-nav .banner-sj-list .banner-sj-list-ad a{ width: 220px; height: 220px; background: #fff; margin-top: 14px; float: left;}

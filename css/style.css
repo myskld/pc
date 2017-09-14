@@ -1,0 +1,9 @@
+body,h1,h2,h3,h4,h5,h6,p,b,em,i,strong,ul,ol,dl,li,dd,dt,img,fieldset,label,a{ margin:0; padding:0;}
+ul,ol{ list-style:none;}
+a{ text-decoration:none;}
+fieldset,img{ border:0;}
+b,strong{ font-weight:normal;}
+h1,h2{ font-weight:100; font-size:16px;}
+.clearfix:after{ content: "."; clear: both; display: block; visibility: hidden; overflow: hidden; height: 0;}
+body{ font-family: "微软雅黑";}
+i{ font-style: normal; }
