@@ -1,4 +1,4 @@
-$(function(){
+/*$(function(){
 	var imgs = $(".banner-container > li"),
 		len = imgs.length,
 		startTime = 0,
@@ -89,4 +89,4 @@ $(function(){
 			display : "none"
 		})
 	});
-});
+});*/
