@@ -1,0 +1,48 @@
+[
+	{
+		"id":0,
+		"mzsj":[
+				{"imgsrc":"images/pro7.png","proname":"PRO 7","price":"￥2880起"},
+				{"imgsrc":"images/pro7p.png","proname":"PRO 7 Plus","price":"￥3580起"},
+			 	{"imgsrc":"images/pro6p.jpg","proname":"PRO 6 Plus","price":"￥2699起"},
+				{"imgsrc":"images/pro6s.png","proname":"PRO 6s","price":"￥2290起"},
+				{"imgsrc":"images/images/mx6.jpg","proname":"PRO MX6","price":"￥1599起"}
+			   ]
+	},
+	{
+		"id":1,
+		"mlsj":[
+				{"imgsrc":"images/ml_note6.jpg","proname":"魅蓝 Note6","price":"￥1099起"},
+				{"imgsrc":"images/ml_a5.jpg","proname":"魅蓝 A5","price":"￥699起"},
+			 	{"imgsrc":"images/ml_e2.jpg","proname":"魅蓝 E2","price":"￥1199起"},
+				{"imgsrc":"images/ml_5s.jpg","proname":"魅蓝 5s","price":"￥999起"},
+				{"imgsrc":"images/ml_note5.jpg","proname":"魅蓝 Note5","price":"￥899起"},
+				{"imgsrc":"images/ml_x.jpg","proname":"魅蓝 X","price":"￥1499起"},
+				{"imgsrc":"images/ml_5.jpg","proname":"魅蓝 5 礼盒版","price":"￥799起"},
+				{"imgsrc":"images/ml_e.png","proname":"魅蓝 E","price":"￥999起"}
+			   ]
+	},
+	{
+		"id":2,
+		"mzsx":[
+				{"imgsrc":"images/ear1.png","proname":"魅蓝 EP52","price":"￥299"},
+				{"imgsrc":"images/ear2.png","proname":"魅族 ME20","price":"￥199"},
+				{"imgsrc":"images/ear3.png","proname":"魅族蓝牙小音箱","price":"￥169"},
+				{"imgsrc":"images/ear4.png","proname":"魅族 EP2X","price":"￥129"},
+				{"imgsrc":"images/ear5.png","proname":"魅蓝 EP51","price":"￥229"},
+				{"imgsrc":"images/ear6.png","proname":"魅族 HD50","price":"￥399"}
+			   ]
+	},
+	{
+		"id":3,
+		"znpj":[
+				{"imgsrc":"images/pro7.png","proname":"魅蓝旅行包","price":"￥269"},
+				{"imgsrc":"images/pro7.png","proname":"魅族智能体脂称","price":"￥169"},
+				{"imgsrc":"images/pro7.png","proname":"魅蓝旅行双肩包","price":"￥199"},
+				{"imgsrc":"images/pro7.png","proname":"魅族手环","price":"￥229"},
+				{"imgsrc":"images/pro7.png","proname":"魅族盒子","price":"￥399"},
+				{"imgsrc":"images/pro7.png","proname":"魅族路由器","price":"￥199"},
+				{"imgsrc":"images/pro7.png","proname":"魅族移动电源","price":"￥99"}
+			   ]
+	}
+]

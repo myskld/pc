@@ -10,7 +10,8 @@ $(function(){
 	$(".header .mzsj").mouseenter(function(){
 		$(".header-public").css({
 			height : 150 + "px",
-			opacity : 1
+			opacity : 1,
+			display : "block"
 		});
 		$(".mzsj-list").css({
 			display : "block"
@@ -59,7 +60,8 @@ $(function(){
 	$(".header .mzsj").mouseleave(function(){
 		$(".header-public").css({
 			height : 0,
-			opacity : 0
+			opacity : 0,
+			display : "none"
 		});
 		$(".mzsj-list").css({
 			display : "none"

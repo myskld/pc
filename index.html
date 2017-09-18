@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>魅族官网商城-提供魅族手机 PRO系列、MX系列、魅蓝（Note）系列的预约和购买</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/font/iconfont.css">
@@ -21,39 +21,34 @@
 				</div>
 			</div>
 			<ul class="header-list">
-				<li><div><a href="index.html">魅族商城</a></div></li>
+				<li><div><a href="index.html" class="list_link">魅族商城</a></div></li>
 				<li class="mzsj">
-					<div><a href="https://lists.meizu.com/">魅族手机</a></div>
-					<ul class="mzsj-list">
-						<li><a href="#"><img src="images/pro7.png"><p>PRO 7</p><p>￥2880起</p></a></li>
-						<li><a href="#"><img src="images/pro7p.png"><p>PRO 7 Plus</p><p>￥3580起</p></a></li>
-						<li><a href="#"><img src="images/pro6p.jpg"><p>PRO 6 Plus</p><p>￥2699起</p></a></li>
-						<li><a href="#"><img src="images/pro6s.png"><p>PRO 6s</p><p>￥2290起</p></a></li>
-						<li><a href="#"><img src="images/mx6.jpg"><p>PRO MX6</p><p>￥1599起</p></a></li>
-					</ul>
+					<a href="https://lists.meizu.com/" class="list_link">魅族手机</a>
+					<!-- <div class="layout-header-nav-child">
+						
+					</div> -->
+					<div class="mzsj-list">
+						<ul class="nav-sj-list">
+							<li><a href="#"><img src="images/pro7.png" class="nav-img"><p>PRO 7</p><p>￥2880起</p></a></li>
+							<li><a href="#"><img src="images/pro7p.png" class="nav-img"><p>PRO 7 Plus</p><p>￥3580起</p></a></li>
+							<li><a href="#"><img src="images/pro6p.jpg" class="nav-img"><p>PRO 6 Plus</p><p>￥2699起</p></a></li>
+							<li><a href="#"><img src="images/pro6s.png" class="nav-img"><p>PRO 6s</p><p>￥2290起</p></a></li>
+							<li><a href="#"><img src="images/mx6.jpg" class="nav-img"><p>PRO MX6</p><p>￥1599起</p></a></li>
+						</ul>
+					</div>
+					<div class="header-public"></div>
 				</li>
 				<li class="mlsj">
-					<div><a href="https://lists.meizu.com/">魅蓝手机</a></div>
-					<ul class="mlsj-list">
-						<li><a href="#"><img src="images/ml_note6.jpg"><p>魅蓝 note6</p><p>￥1099起</p></a></li>
-						<li><a href="#"><img src="images/ml_a5.jpg"><p>魅蓝 A5</p><p>￥699起</p></a></li>
-						<li><a href="#"><img src="images/ml_e2.jpg"><p>魅蓝 E2</p><p>￥1199起</p></a></li>
-						<li><a href="#"><img src="images/ml_5s.jpg"><p>魅蓝 5s</p><p>￥999起</p></a></li>
-						<li><a href="#"><img src="images/ml_note5.jpg"><p>魅蓝 note5</p><p>￥899起</p></a></li>
-						<li><a href="#"><img src="images/ml_x.jpg"><p>魅蓝 X</p><p>￥1449起</p></a></li>
-						<li><a href="#"><img src="images/ml_5.jpg"><p>魅蓝 5 礼盒版</p><p>￥799起</p></a></li>
-						<li><a href="#"><img src="images/ml_e.png"><p>魅蓝 E</p><p>￥999起</p></a></li>
-					</ul>
+					<a href="https://lists.meizu.com/" class="list_link">魅蓝手机</a>
 				</li>
-				<li class="mzsx"><div><a href="https://lists.meizu.com/">魅族声学</a></div></li>
-				<li class="znpj"><div><a href="https://lists.meizu.com/">智能·配件</a></div></li>
-				<li><div><a href="http://care.meizu.com/">服务</a></div></li>
-				<li><div><a href="http://retail.meizu.com/index.html">专卖店</a></div></li>
-				<li><div><a href="http://www.flyme.cn/?click=wmz_public_yt_flyme">Flyme</a></div></li>
-				<li><div><a href="https://bbs.meizu.cn/">社区</a></div></li>
+				<li class="mzsx"><a href="https://lists.meizu.com/" class="list_link">魅族声学</a></li>
+				<li class="znpj"><a href="https://lists.meizu.com/" class="list_link">智能·配件</a></li>
+				<li><a href="http://care.meizu.com/" class="list_link">服务</a></li>
+				<li><a href="http://retail.meizu.com/index.html" class="list_link">专卖店</a></li>
+				<li><a href="http://www.flyme.cn/?click=wmz_public_yt_flyme" class="list_link">Flyme</a></li>
+				<li><a href="https://bbs.meizu.cn/" class="list_link">社区</a></li>
 			</ul>
 		</div>
-		<div class="header-public"></div>
 	</div>
 	<div class="banner">
 		<div class="carousel_container">
@@ -295,6 +290,30 @@
 			}
 		%>
 	</script>
+	<!-- <script type="text/html" id="nav_temp">
+		<%
+			for(var i = 0; i < products.length; i++){
+				var product = products[i]
+				for(var j = 0; j < product.length; i++){
+					var data = product[j]
+		%>
+		<div id="main">
+			<ul class="mzsj-list">
+				<li>
+					<a href="#">
+						<img src=<%= data.imgsrc %> class="nav-img">
+						<p><%= data.proname %></p>
+						<p><%= data.price %></p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<%
+				}
+			}
+		%>
+	</script> -->
+
 
 </body>
 </html>
