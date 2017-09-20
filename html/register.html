@@ -19,7 +19,7 @@
 				</div>
 				<div class="tip-box">
 					<i class="err-ico"></i>
-					<span class="tip-font">请填写完整的登录信息</span>
+					<span class="tip-font">请填写完整的注册信息</span>
 					<i class="close-ico"></i>
 				</div>
 				<div class="normalInput cycode-box fieldInput">
@@ -28,17 +28,18 @@
 							<input type="text" class="ipt-cycode" value="+86">
 							<i class="iconfont icon-xiajiantou arrow-down"></i>
 						</span>
-						<input type="text" class="ipt-account inp-focus" placeholder="手机号码">
+						<input type="text" class="ipt-account inp-focus" placeholder="手机号码" maxlength="11">
 					</div>
 				</div>
 				<div class="geetest_holder">
-					<div class="geetest_circle">
-						<div class="geetest_s_circle"></div>
-						<div class="geetest_h"></div>
+					<div class="account_check">
+						<input type="text" class="check_info" placeholder="输入验证码">
+						<img src="" class="check_img">
+						<span class="check_text"></span>
 					</div>
-					<div class="geetest_radar_tip">
-						<span class="geetest_radar_tip_content">点击按钮进行验证</span>
-						<span class="geetest_reset_tip_content">请点击重试</span>
+					<div class="verification-code">
+						<input type="text" placeholder="验证码" class="verification-info">
+						<a href="javascript:void(0)" class="gain">获取验证码</a>
 					</div>
 				</div>
 				<div class="check">
@@ -86,5 +87,8 @@
 			<a href="">经营许可证编号: 粤B2-20130198</a>
 			<a href="">营业执照</a>
 		</div>
+	</header>
+	<script src="../lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="../js/register.js"></script>
 </body>
 </html>

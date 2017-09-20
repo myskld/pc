@@ -11,8 +11,9 @@ a{ color: #515151; }
 .banner-box:before{ position: absolute; content: " "; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/banner.png); background-size: contain; }
 
 .main-form{ width: 298px; position: absolute; top: 16%; right: 380px; background-color: #fff; padding: 35px 35px 10px; border-radius: 2px; }
-@media (max-width: 1440px){.main-form{ right: 220px; top: 10%; }}
+@media (max-width: 1440px){.main-form{ right: 220px; top: 14%; }}
 
+.account_login{ display: none; overflow: hidden; }
 .tab-title{ font-size: 18px; margin-top: 35px; width: 300px; text-align: center; }
 .register-line{ color: #B3ABAB; display: inline-block; line-height: 20px; height: 10px; border-left: 1px; border: 1px solid #B3ABAB; margin-left: 32px; margin-right: 32px; }
 a.linkABlue:link, a.linkABlue:visited{ color: #32A5E7; }
@@ -24,25 +25,34 @@ a.linkABlue:link, a.linkABlue:visited{ color: #32A5E7; }
 
 div.normalInput{ overflow: visible; }
 .main-form .normalInput{ margin-bottom: 20px; }
-.cycode-selected{ display: none; }
+.cycode-selectbox{ display: none; padding-top: 14px; overflow: hidden; }
+.cycode-selected{ display: block; width: 60px; border-right: 1px solid #dadada; float: left; }
+.cycode-selected .link{ cursor: pointer; display: inline-block; height: 18px; line-height: 22px; font-size: 12px; }
 .normalInput{ border-radius: 2px; position: relative; width: 276px; padding: 0 10px; height: 46px; line-height: 22px; font-size: 14px; border: 1px solid #dadada; outline: none; color: #474747; }
-.ipt-account{ position: absolute;  }
-.normalInput input{ width: 92%; height: 42px; line-height: 22px; border: none; outline: none; font-size: 14px;}
+.normalInput .ipt-cycode{ width: 60%; height: 18px; line-height: 22px; border: none; outline: none; font-size: 14px; text-align: center;}
+.normalInput .ipt-info{ height: 18px; outline: none; border: none; display: block; float: left; line-height: 22px; padding-left: 10px; width: 74%; }
+
+.normalInput .ipt-account{ position: absolute; width: 93%; height: 44px; line-height: 22px; border: none; outline: none; font-size: 14px; }
 
 .geetest_holder{ min-width: 260px; height: 44px; border: 1px solid #dadada; position: relative; margin-bottom: 20px;}
-.geetest_holder .geetest_circle{ width: 30px; height: 30px; border: 1px solid #2488FF; border-radius: 50%; position: absolute; top: 6px; left: 6px; }
-.geetest_s_circle{ width: 10px; height: 10px; background: #2488FF; border-radius: 50%; position: absolute; top: 10px; left: 10px; z-index: 2; }
-.geetest_h{ width: 0; height: 0; border-bottom: 5px solid transparent; border-left: 16px solid #aedbfb; border-top: 5px solid transparent; position: absolute; top: 10px; transform-origin: right; }
-.geetest_radar_tip{ padding-left: 46px; height: 42px; line-height: 42px; position: absolute; top: 0; left: 0; font-size: 14px; color: #474747; }
-.geetest_reset_tip_content{ display: none; }
-.check{ font-size: 14px; color: #474747; height: 20px; line-height: 20px; margin-bottom: 40px; }
+.geetest_holder .account_check{ position: absolute; }
+.geetest_holder .check_info{ border: none; height: 44px; line-height: 44px; display: inline-block; float: left; width: 50%; padding: 0 10px; outline: none; }
+.geetest_holder .check_img{ height: 42px; display: inline-block; float: left; margin-top: 1px; }
+.geetest_holder .check_text{ font-size: 12px; position: absolute; top: 44px; color: red; display: block; }
+.geetest_holder .verification-code{ position: absolute; top: 14px; left: 0; display: none; }
+.geetest_holder .verification-info{ border: none; height: 18px; line-height: 22px; display: inline-block; float: left; width: 45%; padding: 0 10px; outline: none; border-right: 1px solid #dadada; }
+.geetest_holder .gain{ height: 18px; width: 45%; text-align: center; float: left; display: block; font-size: 14px; color: #999; cursor: default; }
+
+.check{ display: block; font-size: 14px; color: #474747; height: 24px; line-height: 24px; margin-bottom: 40px; }
 .remember{ display: block; height: 20px; line-height: 20px; float: left; margin-top: 2px; cursor: pointer;}
 .remember_label{ display: block; height: 20px; line-height: 20px; }
 .check input{ outline: none; width: 20px; height: 20px; cursor: pointer; display: block; float: left; }
-.btn-login{ width: 100%; height: 44px; background: #2b8cc5; border-radius: 2px; line-height: 44px; text-align: center; color: #fff; font-size: 14px; cursor: pointer; margin-bottom: 10px; }
+.btn-login{ width: 100%; height: 44px; background: #32a5e7; border-radius: 2px; line-height: 44px; text-align: center; color: #fff; font-size: 14px; cursor: pointer; margin-bottom: 10px; }
+.btn-login:hover{ background-color: #2b8cc5; }
 .transferField{ margin-bottom: 5px; }
 .register{ display: inline-block; color: #32A5E7; font-size: 14px; float: left;}
 .forgetpwd{ display: inline-block; color: #32a5e7; font-size: 14px; float: right; }
+
 
 .footerInner{ width: 1000px; margin: 24px auto; overflow: hidden;}
 .footer-innerLink{ float: left; }
