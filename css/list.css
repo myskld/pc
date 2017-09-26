@@ -1,0 +1,52 @@
+.main{width: 1240px; margin: 0 auto;}
+body{ overflow-x: hidden; font-size: 14px; }
+
+.list-main { background-color: #f8f8f8; border-top: 1px solid #efefef; padding-bottom: 15px; }
+.crumbs{ height: 40px; line-height: 40px; }
+.crumbs .list-skip-index,.jianjiao,.list-all{ display: inline-block; }
+.list-all,.jianjiao{ font-size: 14px; color: #999; }
+.products-list{ background: #fff; border: 1px solid #efefef; padding: 15px 10px;margin-bottom: 10px; overflow: hidden; }
+
+.sl-line-wrap{ position: relative; line-height: 46px; height: auto; overflow: hidden; }
+.mod-key,.mod-value,.mod-value ul li{ float: left; }
+.mod-key{ width: 75px; padding-left: 10px; white-space: nowrap; color: #333; }
+.mod-value ul li{ margin-right: 60px; margin-bottom: 6px; }
+.mod-value ul li a{ transition: all .3s; }
+.mod-value ul li:hover a{ color: #00c3f5; }
+
+.list-main .filter{ margin: 30px 0 20px; }
+.list-main .filter .filter-order{ float: left; }
+.list-main .filter-order a{ margin-right: 20px; line-height: 20px; height: 20px; width: 50px; float: left; }
+
+.filter .filter-condition{ float: right; color: #666; }
+.bs-checkbox,.bs-checkbox input{ cursor: pointer; margin: 0 5px;}
+
+.goods-list{ position: relative; margin-bottom: 20px; height: auto; margin-bottom: 20px; }
+.goods-list .goods-list-wrap{ width: 1252px; height: auto; }
+.gl-item{ background: #fff; width: 300px; height: 415px; margin: 0 12px 12px 0; float: left; position: relative; transition: all .3s; }
+.gl-item a{ display: block; }
+.compare-btn-list{ cursor: pointer; color: #666; position: absolute;margin-top: 17px; margin-left: 23px; z-index: 2 }
+.compare-btn-list i{ margin-right: 2px; color: #00c3f5; }
+.gl-item-wrap{ position: relative; text-align: center; padding: 20px 30px 0; transition: all .3s; }
+.gl-item-wrap:hover{ box-shadow: 1px 6px 30px -5px #999; }
+.gl-item .mod-pic { position: relative; width: 220px; height: 220px; margin: 0 auto 14px; text-align: center; border: 0; }
+.gl-item .mod-pic img{ width: 100%; }
+.item-slide{ position: relative; width: 200px; height: 42px; margin: 13px auto 15px; overflow: hidden; }
+.item-slide dl{ position: absolute; top: 0; left: 0; width: 200px; height: 42px; text-align: center; }
+.item-slide dl dd { cursor: pointer; overflow: hidden; float: left; margin: 0 4px; width: 40px; height: 40px; border: 1px solid #EFEFEF; border-radius: 4px; text-align: center; }
+.gl-item h2, .gl-item h3{ margin-bottom: 8px; overflow: hidden; text-overflow: ellipsis;white-space: nowrap; }
+.gl-item h2{ width: 100%; height: 21px; text-align: center; font-size: 14px; color: #333; }
+.gl-item h3.red{ color: #E02B41; }
+.gl-item h3{ font-size: 12px; }
+.gl-item .mod-price{ position: relative; overflow: hidden; padding: 0 30px; margin: 0 0 8px; text-align: center; color: #E02B41; }
+.gl-item .mod-price em{ font-size: 14px; }
+.gl-item .mod-price .vm-price{ font-size: 18px; }
+.gl-item .mod-price .vm-start{ font-size: 12px; }
+
+.pages{ text-align: center; height: 52px; }
+.pages .ui-paginate{ text-align: center; margin-top: 15px; display: inline-block; font-size: 14px; height: auto;  }
+.pages .list-prve{ display: inline-block; border: 1px solid #ddd; width: 20px; height: 20px; font-size: 14px; color: #efefef; line-height: 21px; text-align: center; padding: 5px; background: #fff; }
+.pages .list-next{ display: inline-block; border: 1px solid #ddd; width: 20px; height: 20px; font-size: 14px; color: #ddd; line-height: 21px; text-align: center; padding: 5px; background: #fff; }
+.pages .list-elem{ padding: 5px 15px; margin: 0 4px; line-height: 20px; text-align: center; display: inline-block; vertical-align: middle; }
+.pages .current{ color: #00c3f5; cursor: default; }
+.pages .etc{ color: #ccc;  }

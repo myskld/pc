@@ -6,4 +6,4 @@ b,strong{ font-weight:normal;}
 h1,h2,h3,h4,h5,h6{ font-weight:100;}
 .clearfix:after{ content: "."; clear: both; display: block; visibility: hidden; overflow: hidden; height: 0;}
 body{ font-family: "微软雅黑";}
-i{ font-style: normal; }
+i,em{ font-style: normal; }

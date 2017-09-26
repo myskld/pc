@@ -1,0 +1,91 @@
+#main{width: 1240px; margin: 0 auto;}
+body{ overflow-x: hidden; }
+a{ color: #333; font-size: 14px; }
+
+/*头部部分css样式*/
+.header{ height: 80px; width: 100%; position: relative;}
+.header .header-logo{ float: left; }
+.header .header-logo .logo{ line-height: 80px; color: #00c3f5; font-size: 22px; }
+
+.header .header-login{ float: right;}
+
+.header .header-login .left{ float: left; padding: 30px 17px 15px; position: relative;}
+.header .header-login .right{ float: right; padding: 30px 17px 0; position: relative;}
+.header .header-login .right a{ color: #666666; position: relative; width: 24px; height: 24px; display: inline-block;}
+.header .header-login .right .shop-text{ position: absolute; color: red; top: -5px; left: 4px; font-size: 12px; background: #fff; padding: 0 1px;}
+.header .header-login .login{ color: #bababa;background: #eeeeee; width: 22px;height: 22px; display: inline-block; line-height: 22px; text-align: center; border-radius: 20px;cursor: pointer;}
+
+
+.header .header-list{ float: right; font-size: 14px;}
+.header .header-list li{ float: left; padding: 0 15px;}
+.list_link{ height: 80px; line-height: 80px; display: inline-block; transition: color ease-out 0.2s; }
+.header .header-list li:hover a.list_link{ color: #00c3f5; }
+
+.nav-img{ width: 80px; height: 80px; }
+.header .header-public{ width: 100%; height: 0; position: absolute; top: 80px; left: 0; background: #fff;  transition: all .3s; z-index: 444; display: none; opacity: 0;}
+
+.header .header-list .mzsj-list{ position: absolute; top: 50px; left: 0; height: 150px; text-align: center; line-height: 20px; z-index: 999; width: 100%; display: none;}
+.mzsj-list .nav-sj-list{ position: absolute; left:400px; padding-top: 30px; }
+.header .header-list .mzsj-list li{position: relative; margin: 0 20px; opacity: 0;}
+
+.header .header-list .mlsj-list{ position: absolute; top: 50px; left: 0; height: 150px; text-align: center; line-height: 20px; z-index: 999; width: 100%; display: none;}
+.header .header-list .mlsj-list li{position: relative; margin: 0 15px; opacity: 0;}
+.mlsj-list .nav-sj-list{ position: absolute; left:120px; padding-top: 30px; }
+
+.header .header-list .mzsx-list{ position: absolute; top: 50px; left: 0; height: 150px; text-align: center; line-height: 20px; z-index: 999; width: 100%; display: none;}
+.header .header-list .mzsx-list li{position: relative; margin: 0 20px; opacity: 0;}
+.mzsx-list .nav-sj-list{ position: absolute; left:300px; padding-top: 30px; }
+
+.header .header-list .znpj-list{ position: absolute; top: 50px; left: 0; height: 150px; text-align: center; line-height: 20px; z-index: 999; width: 100%; display: none;}
+.header .header-list .znpj-list li{position: relative; margin: 0 15px; opacity: 0;}
+.znpj-list .nav-sj-list{ position: absolute; left:200px; padding-top: 30px; }
+.layout-user-downmenu{ position: absolute; top: 64px; left: 1115.5px; animation: .3s ease showUserDownMenu forwards 1; padding-top: 4px; overflow: hidden; display: none; }
+.layout-user-downmenu-list{ background-color: #fff; width: 96px; border: 1px solid #efefef; border-radius: 3px; padding: 6px 0; }
+.layout-user-downmenu-link{ display: block; padding: 7px 0; position: relative; color: #666; transition: all .3s; text-align: center; font-size: 12px; }
+.layout-user-downmenu-link:hover{ background: #eee; }
+
+
+/*尾部部分css样式*/
+.layout-footer{ width: 100%; height: 295px; color: #999; font-size: 12px; border-top: 1px solid #efefef; background-color: #fff; overflow: hidden;}
+.layout-footer .layout-footer-top{ border-bottom: 1px solid #efefef; }
+.layout-footer .layout-footer-services-link{ color: #999; }
+.layout-footer .layout-footer-services{ float: left; width: 960px; margin: 60px 0 16px; }
+.layout-footer .layout-footer-services-item{ float: left; width: 240px; margin-bottom: 27px; line-height: 30px; } 
+.layout-footer .layout-footer-service-wrap{ display: inline-block; width: 30px; text-align: center; vertical-align: middle; }
+.layout-footer .layout-footer-services-item .layout-font{ font-size: 30px; vertical-align: middle; color: #999; }
+.layout-footer .layout-footer-services-text{ vertical-align: middle; font-size: 14px; }
+.layout-footer .layout-footer-contact{ float: right; margin-top: 65px; text-align: right; }
+.layout-footer .layout-footer-contact-online{ display: inline-block; vertical-align: middle; width: 144px; height: 40px; color: #fff; font-size: 16px; border-radius: 3px; background-color: #00c3f5; line-height: 36px; text-align: center; transition: background-color .5s; }
+.layout-footer .layout-footer-contact-online .text{ display: inline-block; padding-right: 6px; vertical-align: middle; }
+.layout-footer .layout-footer-contact-tel{ color: #00c3f5; font-size: 20px; margin-bottom: 8px; display: block; }
+.layout-footer .layout-footer-contact-online .layout-font{ vertical-align: middle; font-size: 20px; }
+.layout-footer .layout-footer-contact-desc{ font-size: 12px; margin-bottom: 2px; }
+.layout-footer .layout-footer-interlock{ margin: 26px 0 18px; }
+.layout-footer .layout-footer-interlock-item{ float: left; border-right: 1px solid #efefef; }
+.layout-footer .layout-footer-interlock-item:last-child{ border: none; }
+.layout-footer .layout-footer-interlock-item:first-child .layout-footer-interlock-link{ padding-left: 0; }
+.layout-footer .layout-footer-interlock-link{ color: #999; padding: 0 15px; }
+.layout-footer .layout-footer-copyright-link.copyright-text{ margin-right: 10px; }
+.layout-footer .layout-footer-copyright-link{ height: 20px; color: #999; }
+.layout-footer .layout-footer-copyright{ font-size: 12px; }
+.layout-footer .layout-footer-media{ float: right; }
+.layout-footer .layout-footer-media-item { float: left; }
+.layout-footer .layout-footer-media-link{ line-height: 10px; position: relative; padding: 0 5px; border-right: 1px solid #efefef; }
+.layout-footer .layout-footer-media-link .layout-font{ color: #999; font-size: 26px; vertical-align: middle; transition: all .5s }
+
+/*推荐部分css样式*/
+.recommend { margin: 40px 0; }
+.home-hot { margin: 40px auto; }
+.recommend .recommend-header { height: 50px; }
+.recommend .recommend-header h1{ float: left; font-size: 24px;}
+.recommend .recommend-header i{ display: block; border: 1px solid #dcdcdc; width: 25px; height: 25px; line-height: 25px; float: right; margin-left: 5px; text-align: center; color: #efefef; cursor: pointer; transition: all .9s;}
+
+.recommend_carousel{ overflow: hidden; }
+.recommend_carousel .box{ overflow: hidden; position: relative; background: #fff; width: 100%; }
+.recommend_carousel .imgbox{ float: left; width: 245.6px; display: inline-block; margin-right: 2px; }
+.recommend_carousel .imgbox img{ width: 180px; height: 180px; }
+.imgbox a{ display: block; padding: 36px 10px 5px; text-align: center; }
+.imgbox h3{ margin-top: 40px; font-size: 14px; color: #555757; white-space: nowrap;}
+.imgbox h4{ color: #e02b41; margin-top: 8px; font-size: 16px; }
+.imgbox h4 span{ font-size: 12px; color: #e02b41; }
+.imgbox p{ font-size: 12px; color: #999; margin-top: 2px; white-space: nowrap; }

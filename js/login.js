@@ -1,30 +1,4 @@
 $(function(){
-	require(["config"],function(){
-		require(["jquery"],function($){
-			$(".btn-login").click(function(){
-				var _user = $(".focus").val(),
-					_pass = $(".in-focus").val();
-				$.post(
-					"http://localhost/login.php",
-					{username:_user,password:_pass},
-					function(data){
-						if(data.status == 1){
-							location = "/index.html"
-						}else{
-							$(".tip-font").html("账户不存在");
-							$(".tip-box").css({
-								"visibility": "visible"
-							});
-						}
-					},
-					"json"
-				);
-				return false;
-			});
-		});
-	});
-	var istrue = $(".check_text").prop("isTrue");
-	console.log(istrue)
 	function loadCode(){
 		$.ajax({
 			type:"get",
@@ -69,7 +43,35 @@ $(function(){
 			}
 		);
 	});
-	/*********************************************************************/
+
+	var istrue = $(".check_text").prop("isTrue");
+	console.log(istrue)
+
+	require(["config"],function(){
+		require(["jquery"],function($){
+			$(".btn-login").click(function(){
+				var _user = $(".focus").val(),
+					_pass = $(".in-focus").val();
+				$.post(
+					"http://localhost/login.php",
+					{username:_user,password:_pass},
+					function(data){
+						if(data.status == 1){
+							location = "/index.html"
+						}else{
+							$(".tip-font").html("账户不存在");
+							$(".tip-box").css({
+								"visibility": "visible"
+							});
+						}
+					},
+					"json"
+				);
+				return false;
+			});
+		});
+	});
+	/*****************************************************************************************/
 	$(".main-form").delegate(".focus,.in-focus,.check_info,.ipt-info,.verification-info","focus",function(){
 		if($(this).is(".focus")){
 			$(".onblue").css({

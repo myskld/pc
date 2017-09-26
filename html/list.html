@@ -3,9 +3,131 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/headfoot.css">
+	<link rel="stylesheet" type="text/css" href="../css/font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../css/list.css">
 </head>
 <body>
-	<div class=""></div>
+	<div class="header"></div>
+	<div class="list-main clearfix">
+		<div class="main">
+			<div class="crumbs clearfix">
+				<a href="/index.html" class="list-skip-index">首页</a>
+				<span class="jianjiao">></span>
+				<p class="list-all">全部商品</p>
+			</div>
+			<div class="products-list">
+				<div class="sl-line-wrap">
+					<div class="mod-key">分类 :</div>
+					<div class="mod-value">
+						<ul>
+							<li><a href="">手机</a></li>
+							<li><a href="">智能设备</a></li>
+							<li><a href="">智能穿戴</a></li>
+							<li><a href="">游戏设备</a></li>
+							<li><a href="">数码影音</a></li>
+							<li><a href="">手机配件/移动电源</a></li>
+							<li><a href="">移动存储/办公设备</a></li>
+							<li><a href="">生活周边</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sl-line-wrap">
+					<div class="mod-key">品牌 :</div>
+					<div class="mod-value">
+						<ul>
+							<li><a href="">手机</a></li>
+							<li><a href="">全部</a></li>
+							<li><a href="">魅族</a></li>
+							<li><a href="">乐心</a></li>
+							<li><a href="">先锋</a></li>
+							<li><a href="">暴风魔镜</a></li>
+							<li><a href="">新游</a></li>
+							<li><a href="">铁三角</a></li>
+							<li><a href="">Beats</a></li>
+							<li><a href="">其他品牌</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="filter clearfix">
+				<div class="filter-order">
+					<a href="javascript:void(0)" class="Aublue">推荐</a>
+					<a href="javascript:void(0)">新品</a>
+					<a href="javascript:void(0)">价格</a>
+				</div>
+				<div class="filter-condition">
+					<label class="bs-checkbox"><input type="checkbox">仅显示有货商品</label>
+				</div>
+			</div>
+			<div class="goods-list">
+				<ul class="goods-list-wrap clearfix">
 
+				</ul>
+			</div>
+			<div class="pages">
+				<div class="ui-paginate">
+					<a href="javascript:void(0)" class="list-prve"><i class="iconfont icon-zuojiantou"></i></a>
+					<span class="current list-elem">1</span>
+					<a href="javascript:void(0)" class="list-item list-elem">2</a>
+					<a href="javascript:void(0)" class="list-item list-elem">3</a>
+					<span class="etc list-elem">...</span>
+					<a href="javascript:void(0)" class="list-item list-elem">11</a>
+					<a href="javascript:void(0)" class="list-next"><i class="iconfont icon-youjiantou"></i></a>
+				</div>
+			</div>
+			<div class="recommend-main">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="layout-footer"></div>
+
+	<script type="text/html" id="pro_list">
+		<%
+			for(var i = 0; i < product_list.length; i++){
+				var product = product_list[i];
+				
+		%>
+			<li class="gl-item">
+				<div class="compare-btn-list">
+					<i class="<%= product.compare.classname %>"></i>
+					<span><%= product.compare.text %></span>
+				</div>
+				<a href="" target="_blank">
+					<div class="gl-item-wrap">
+						<div class="mod-pic"><img src="<%= product.big_imgsrc %>"></div>
+						<div class="item-slide j-pro-wrap">
+							<dl>
+								<%
+									for(var j = 0; j < product.samll_imgsrc.length; j++){
+										var img = product.samll_imgsrc[j];
+								%>
+								<dd class=""><img style="width: 40px; height: 40px;" src="<%= img %>"></dd>
+								<%
+									}
+								%>
+							</dl>
+						</div>
+						<h2><%= product.name %></h2>
+						<h3 class="red"><%= product.discounts %></h3>
+						<div class="mod-price">
+							<em><%= product.td %></em>
+							<span class="vm-price"><%= product.price %></span>
+							<span class="vm-start"><%= product.up %></span>
+						</div>
+					</div>
+				</a>
+			</li>
+		<%
+			}
+		%>
+	</script>
+
+	<script src="../lib/requirejs/require.js" data-main="/js/list"></script>
+	<script src="../lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="../js/index_header.js"></script>
 </body>
 </html>

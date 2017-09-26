@@ -1,5 +1,6 @@
 $(function(){
 	$(".left,.layout-user-downmenu").hover(function(){
+		console.log(123)
 		$(".layout-user-downmenu").css({
 			"display": "block"
 		});
